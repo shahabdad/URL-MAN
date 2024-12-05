@@ -1,0 +1,174 @@
+<!-- <!-- import React, { useState } from "react";
+
+const URLShortener = () => {
+  const [url, setUrl] = useState("");
+  const [shortUrl, setShortUrl] = useState("");
+  const [copied, setCopied] = useState(false);
+
+  const handleShorten = () => {
+    if (url) {
+      const short = `https://short.ly/${Math.random().toString(36).substr(2, 6)}`;
+      setShortUrl(short);
+      setCopied(false);
+    }
+  };
+
+  const handleCopy = () => {
+    if (shortUrl) {
+      navigator.clipboard.writeText(shortUrl);
+      setCopied(true);
+    }
+  };
+
+  return (
+    <div
+      className="d-flex align-items-center justify-content-center vh-100"
+      style={{
+        background: "linear-gradient(120deg,#6a11cb, #2575fc )",
+        padding: "20px",
+      }}
+    >
+      <div
+        className="card p-4 shadow-lg"
+        style={{
+          maxWidth: "500px",
+          width: "100%",
+          borderRadius: "16px",
+        }}
+      >
+        <h3
+          className="text-center mb-4 fw-bold"
+          style={{
+            color: "#55d117",
+            textShadow: "1px 1px 2px #ddd ",
+          }}
+        >
+          🚀 Beautiful URL Shortener
+        </h3>
+        <p
+          className="text-center text-muted mb-4"
+          style={{ fontSize: "0.9rem" }}
+        >
+          e.g., Enter a long URL and get a short, shareable link!
+        </p>
+        <div className="input-group mb-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Paste your URL here"
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+            style={{
+              borderRadius: "8px 0 0 8px",
+              border: "2px solid #6a11cb",
+            }}
+          />
+          <button
+            className="btn"
+            onClick={handleShorten}
+            style={{
+              background: "#6a11cb",
+              color: "white",
+              borderRadius: "0 8px 8px 0 ",
+              fontWeight: "bold",
+            }}
+          >
+            Shorten
+          </button>
+        </div>
+        {shortUrl && (
+          <div className="text-center mt-4">
+            <p
+                  className="text-success fw-bold mb-2"
+              style={{ fontSize: "1rem" }}
+            >
+              Shortened URL:
+            </p>
+            <a
+              href={shortUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="d-block mb-3"
+              style={{
+                textDecoration: "none",
+                color: "#2575fc",
+                fontWeight: "bold",
+              }}
+            >
+              {shortUrl}
+            </a>
+            <button
+              className="btn btn-outline-primary"
+              onClick={handleCopy}
+              style={{
+                borderRadius: "25px",
+                padding: "10px 20px",
+                fontWeight: "bold",
+              }}
+            >
+              {copied ? "Copied! 🎉" : "Copy"}
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default URLShortener; -->
+<!-- ____________________________________________________
+  -->
+
+
+
+  /* Fade-in animation for the card */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Bounce-in animation for the shortened URL section */
+.bounce-in {
+    animation: bounceIn 0.8s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Pulse effect for the copied button */
+.pulse {
+    animation: pulse 29.2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(39, 117, 252, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(39, 117, 252, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(39, 117, 252, 0);
+    }
+} -->

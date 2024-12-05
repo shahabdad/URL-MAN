@@ -1,0 +1,50 @@
+.fade-in{
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }  
+    to{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+    
+}
+
+/* Bounce-in animation URL  */
+.bounce-in{
+    animation: bounceIn 0.8s ease-in-out;
+}
+@keyframes bounceIn {
+    0%{
+        transform: scale(0.8s) ;
+        opacity: 0 ;
+    }
+    60%{
+        transform: scale(1.1);
+        opacity: 1;
+
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+ /* buttom effect  copied  */
+ .pulse{
+    animation :pulse 1.2s infinite
+ }
+ @keyframes pulse{
+    0%  {
+        box-shadow:  0 0 0  0  rgba(32, 117, 252, 0.7);
+    }
+    70%{
+        box-shadow: 0 0 0  0 raba(32, 117, 252,0.7);
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgba(32, 117, 252, 0);
+    }
+ }
